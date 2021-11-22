@@ -38,7 +38,7 @@ async def download(event):
                     participant = event.sender_id
                     ))
             except errors.UserNotParticipantError:
-                await event.reply(f"Sebelum menggunakan bot ini, ikhwah Fillah harus bergabung dengan saluran kami\n\n@{Config.CHANNEL_USERNAME}\n\nSetelah itu kembali kebot dan klik /start")
+                await event.reply(f"Bismillahirrahmanirrahim Sebelum menggunakan bot ini, ikhwah Fillah harus bergabung dengan saluran kami\n\n@{Config.CHANNEL_USERNAME}\n\nSetelah itu kembali ke bot dan klik /start kembali.")
                 return
         
         if event.file :
@@ -82,7 +82,7 @@ async def download(event):
                         await forward_reply.edit(f"📎 : {Config.DOMAIN}/{id_name}\n\n🤖 : {bot_url}",link_preview=True)
                 return
         if pv:
-            await event.reply("kirimkan kami file untuk mendapatkan link download")
+            await event.reply("kirimkan file ke bot ini lalu kami akan memberikan tautan untuk mendownloadnya")
         
 
     elif event.is_channel:
