@@ -38,8 +38,8 @@ async def download(event):
                     participant = event.sender_id
                     ))
             except errors.UserNotParticipantError:
-                await event.reply(f"Bismillahirrahmanirrahim Sebelum menggunakan bot ini, ikhwah Fillah harus bergabung dengan saluran kami\n\n@{Config.CHANNEL_USERNAME}\n\nSetelah itu kembali ke bot dan klik /start kembali. "Jangan lupa untuk mendoakan kemenangan Islam dan kaum muslimin khususnya Mujahidin Daulah Islamiyah #Annajiyah_Media_Center")
-                return
+                await event.reply(f"Bismillahirrahmanirrahim Sebelum menggunakan bot ini, ikhwah Fillah harus bergabung dengan saluran kami\n\n@{Config.CHANNEL_USERNAME}\n\nSetelah itu kembali ke bot dan klik /start kembali. Jangan lupa untuk mendoakan kemenangan Islam dan kaum muslimin khususnya Mujahidin Daulah Islamiyah. #Annajiyah_Media_Center")
+                retur
         
         if event.file :
             if not pv :
